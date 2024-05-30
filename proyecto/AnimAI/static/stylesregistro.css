@@ -1,0 +1,7 @@
+/*imagen de fondo*/
+body.registrarme-page {
+    background-image: url("fondo_oscuro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

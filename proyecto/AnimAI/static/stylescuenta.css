@@ -1,0 +1,33 @@
+/*imagen de fondo*/
+body.cuenta-page {
+    background-image: url("fondo_claro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para el modo claro */
+.cuenta-page.light-mode {
+    background-image: url("fondo_claro.png");
+    color: black; /* Cambia el color del texto según sea necesario */
+}
+
+/* Estilos para el modo oscuro */
+.cuenta-page.dark-mode {
+    background-image: url("fondo_oscuro.png");
+    color: white; /* Cambia el color del texto según sea necesario */
+}
+
+#toggleModeBtn {
+    border-radius: 50%; /* Hacer el botón circular */
+    width: 60px; /* Ajustar el ancho */
+    height: 60px; /* Ajustar la altura */
+    padding: 0; /* Eliminar el relleno interno */
+    overflow: hidden; /* Ocultar el texto */
+}
+
+#toggleModeBtn img {
+    max-width: 100%;
+    max-height: 100%;
+}
+

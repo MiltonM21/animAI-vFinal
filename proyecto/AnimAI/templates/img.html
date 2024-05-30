@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styleshistorial.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'logo_icon.ico' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="historial-page">
+
+    <div class="container">
+        <h1 class="col-xs-12 text-center mt-3 col-md-12 text-center mt-3  col-lg-12 text-center mt-3">Historial</h1>
+        <div class="row align-items-center justify-content-between mb-3">
+            <div class="col-xs-12 my-1 text-center col-md-auto col-lg-auto">
+                <a class="btn btn-primary" id="irAConfiguracionesBtn" href="/configuracion.html">Ir a
+                    Configuraciones</a>
+            </div>
+            <div class="col-xs-12 my-1 text-center col-md-auto col-lg-auto">
+                <img src="{% static 'logo.jpg' %}" alt="Logo de AnimAI" class="logo rounded-circle"
+                    style="width: 200px; height: 200px;">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-auto col-md-auto col-lg-auto">
+                <div class="overlay-bg">
+                    <div class="container text-center">
+                        <div class="gallery">
+                            
+                            
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-fixed bottom-0 end-0 m-3">
+        <button type="button" class="btn btn-primary" id="toggleModeBtn" data-bs-toggle="tooltip"
+            data-bs-placement="left" title="Cambiar Modo">
+            <img id="modoIcono" src="{% static 'boton_luna.png' %}" alt="Botón de cambio de modo">
+        </button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <script src="{% static 'scripthistorial.js' %}"></script>
+
+</body>
+</html>
